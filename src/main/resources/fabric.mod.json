@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "demonslayermod",
+  "version": "1.0.0",
+
+  "name": "Demon Slayer Mod",
+  "description": "Eine Mod basierend auf Demon Slayer: Nichirin Schwert, Atemtechniken & Trainer NPC.",
+  "authors": [
+    "Dein Name"
+  ],
+  "contact": {
+    "homepage": "https://github.com/deinname/DemonSlayerMod",
+    "sources": "https://github.com/deinname/DemonSlayerMod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/demonslayermod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.demonslayermod.DemonSlayerMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
