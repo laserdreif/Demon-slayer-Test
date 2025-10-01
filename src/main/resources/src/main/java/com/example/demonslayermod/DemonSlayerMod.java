@@ -21,5 +21,18 @@ public class DemonSlayerMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "nichirin_sword"), NICHIRIN_SWORD);
 
         System.out.println("Demon Slayer Mod wurde geladen!");
+
+        // oben imports
+import com.example.demonslayermod.entities.TrainerEntity;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
+
+// innerhalb von DemonSlayerMod.onInitialize()
+Registry.register(Registry.ENTITY_TYPE,
+    new Identifier(MODID, "trainer"),
+    TrainerEntity.TYPE);
+
+        
     }
 }
